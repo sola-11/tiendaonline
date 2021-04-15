@@ -1,7 +1,6 @@
 <html>
 <head>
     <title>Tienda JYKYLS</title>
-    <link rel="shortcut icon" href="/favicon.ico" />
     
     <link rel="stylesheet"   href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -13,11 +12,11 @@
   </head> 	  
 	      <body>          
           <nav>       
-
+ 
            <div class="logo">Onfash</div>                                             
                     <ul>
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="">Lo que todos compran</a></li>
+                        <li><a href="2.php">Lo que todos compran</a></li>
                         <li><a href="">Cosmeticos</a></li>
                         <li><a href="">Productos</a></li>
                         <li><a href="">🛒</a></li> 
@@ -45,7 +44,7 @@
                 <div class="alert alert-success">    
                 <a class="badge badge-success" href="#">Ver mi compra</a>
                    </div>
-                   </div>
+                   
 
     <br/>
    	<div class="row">
