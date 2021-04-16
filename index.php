@@ -11,29 +11,26 @@
     
   </head> 	  
 	      <body>          
-          <nav>       
- 
-           <div class="logo">Onfash</div>                                             
+        <nav>  
+           <div class="logo">
+             <a href="index.php">Onfash</a>
+           </div>   
+                                                    
                     <ul>
                         <li><a href="index.php">Home</a></li>
                         <li><a href="2.php">Lo que todos compran</a></li>
                         <li><a href="">Cosmeticos</a></li>
                         <li><a href="">Productos</a></li>
                         <li><a href="">🛒</a></li> 
-
-      <form class="form-inline my-2 my-lg-0">
-      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-1 my-sm-0" type="submit">Buscar</button>
-    </form>    
-    
                 </div>
                 </ul> 
                 </div>      
                 </nav>
-                
+                <div class="banner-area">
+                  <h2></h2>
+                </div>
                                 
-           <section >
-           </section>
+          
 
                <br/>
                
@@ -92,8 +89,8 @@
            type="submit">
             Agregar al carrito
               </button>
-                </div>
-   </div>
+      </div>
+      </div>
       </div>
       <div class="col-3">
       <div class="card">
@@ -104,9 +101,9 @@
         src="img/2.png">
 
         <div class="card-body">
-        <span>Lentes de colores</span> 
+        <span>Lentes de Lujo</span> 
         <h5 class="card-title">$125.00</h5>
-          <p class="card-text">Rosa, Azul, Gris, Negro, Amarillo y Naranja </p>
+          <p class="card-text">Rosa, Azul, Gris, Negro, Amarillo, Verde, Naranja, violeta </p>
           <button 
           class="btn btn-primary"
            name="btnAccion" 
@@ -114,9 +111,9 @@
            type="submit">
             Agregar al carrito
               </button>
-                </div>
-   </div>
-      </div>
+    </div>
+    </div>
+    </div>
          
       
 </body>

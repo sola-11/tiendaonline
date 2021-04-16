@@ -18,7 +18,9 @@
 	      <body>          
           <nav>       
 
-           <div class="logo">Onfash</div>                                             
+          <div class="logo">
+             <a href="index.php">Onfash</a>
+           </div>                                             
                     <ul>
                         <li><a href="index.php">Home</a></li>
                         <li><a href="">Lo que todos compran</a></li>
@@ -26,17 +28,15 @@
                         <li><a href="">Productos</a></li>
                         <li><a href="">🛒</a></li> 
 
-      <form class="form-inline my-2 my-lg-0">
-      <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-1 my-sm-0" type="submit">Buscar</button>
-    </form>    
+       
     
                 </div>
                 </ul> 
                 </div>      
                 </nav>
-                <section >
-           </section>
+                <div class="banner-area">
+                  <h2>This is banner</h2>
+                </div>
                                 
                 
 
@@ -49,12 +49,11 @@
                 <div class="alert alert-success">    
                 <a class="badge badge-success" href="#">Ver mi compra</a>
                    </div>
-                   </div>
-
-    <br/>
+                  
+    <br/>     
    	<div class="row">
-                    
-       <div class="col-3">
+  
+      <div class="col-3">
       <div class="card">
         <img 
         title="MOCO"
@@ -73,14 +72,11 @@
            type="submit">
             Agregar al carrito
               </button>
-                </div>
-   </div>
+      </div>
+      </div>
       </div>
 
-      <br/>
-   	<div class="row">
-                    
-       <div class="col-3">
+      <div class="col-3">
       <div class="card">
         <img 
         title="CEPILLO"
@@ -99,9 +95,55 @@
            type="submit">
             Agregar al carrito
               </button>
-                </div>
-   </div>
+        </div>
+        </div>
+        </div>
+        
+      <div class="col-3">
+      <div class="card">
+        <img 
+        title="CEPILLO"
+        alt="Título"
+        class="card-img-top" 
+        src="img/5.jpg">
+
+        <div class="card-body">
+        <span>Cepillo para Babyhair</span> 
+        <h5 class="card-title">$100.00</h5>
+          <p class="card-text">Cepillo con peine para babyhair</p>
+          <button 
+          class="btn btn-primary"
+           name="btnAccion" 
+           value="Agregar" 
+           type="submit">
+            Agregar al carrito
+              </button>
+     </div>
       </div>
+      </div>
+      
+      <div class="col-3">
+      <div class="card">
+        <img 
+        title="CEPILLO"
+        alt="Título"
+        class="card-img-top" 
+        src="img/5.jpg">
+
+        <div class="card-body">
+        <span>Cepillo para Babyhair</span> 
+        <h5 class="card-title">$100.00</h5>
+          <p class="card-text">Cepillo con peine para babyhair</p>
+          <button 
+          class="btn btn-primary"
+           name="btnAccion" 
+           value="Agregar" 
+           type="submit">
+            Agregar al carrito
+              </button>
+  </div>
+  </div>
+  </div>
 
 </body>
 </html>
