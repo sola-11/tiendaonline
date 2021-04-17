@@ -22,11 +22,11 @@
              <a href="index.php">Onfash</a>
            </div>                                             
                     <ul>
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="">Lo que todos compran</a></li>
-                        <li><a href="">Cosmeticos</a></li>
-                        <li><a href="">Productos</a></li>
-                        <li><a href="">🛒</a></li> 
+                    <li><a href="index.php">Home</a></li>
+                        <li><a href="2.php">Lo que todos compran</a></li>
+                        <li><a href="3.php">Cosmeticos</a></li>
+                        <li><a href="4.php">Productos</a></li>
+                        <li><a href="5.php">Carrito(0)</a></li> 
 
        
     
@@ -35,7 +35,7 @@
                 </div>      
                 </nav>
                 <div class="banner-area">
-                  <h2>This is banner</h2>
+                  <h2></h2>
                 </div>
                                 
                 
@@ -53,7 +53,29 @@
     <br/>     
    	<div class="row">
   
-      <div class="col-3">
+            <div class="col-3">
+      <div class="card">
+        <img 
+        title="CEPILLO"
+        alt="Título"
+        class="card-img-top" 
+        src="img/5.jpg">
+
+        <div class="card-body">
+        <span>Cepillo para Babyhair</span> 
+        <h5 class="card-title">$100.00</h5>
+          <p class="card-text">Cepillo con peine para babyhair</p>
+          <button 
+          class="btn btn-primary"
+           name="btnAccion" 
+           value="Agregar" 
+           type="submit">
+            Agregar al carrito
+              </button>
+        </div>
+        </div>
+        </div>
+        <div class="col-3">
       <div class="card">
         <img 
         title="MOCO"
@@ -75,65 +97,20 @@
       </div>
       </div>
       </div>
-
-      <div class="col-3">
-      <div class="card">
-        <img 
-        title="CEPILLO"
-        alt="Título"
-        class="card-img-top" 
-        src="img/5.jpg">
-
-        <div class="card-body">
-        <span>Cepillo para Babyhair</span> 
-        <h5 class="card-title">$100.00</h5>
-          <p class="card-text">Cepillo con peine para babyhair</p>
-          <button 
-          class="btn btn-primary"
-           name="btnAccion" 
-           value="Agregar" 
-           type="submit">
-            Agregar al carrito
-              </button>
-        </div>
-        </div>
-        </div>
-        
-      <div class="col-3">
-      <div class="card">
-        <img 
-        title="CEPILLO"
-        alt="Título"
-        class="card-img-top" 
-        src="img/5.jpg">
-
-        <div class="card-body">
-        <span>Cepillo para Babyhair</span> 
-        <h5 class="card-title">$100.00</h5>
-          <p class="card-text">Cepillo con peine para babyhair</p>
-          <button 
-          class="btn btn-primary"
-           name="btnAccion" 
-           value="Agregar" 
-           type="submit">
-            Agregar al carrito
-              </button>
-     </div>
-      </div>
-      </div>
+      
       
       <div class="col-3">
       <div class="card">
         <img 
-        title="CEPILLO"
+        title="CINTILLO"
         alt="Título"
         class="card-img-top" 
-        src="img/5.jpg">
+        src="img/7.WEBP">
 
         <div class="card-body">
-        <span>Cepillo para Babyhair</span> 
-        <h5 class="card-title">$100.00</h5>
-          <p class="card-text">Cepillo con peine para babyhair</p>
+        <span>Cintillo de perlas</span> 
+        <h5 class="card-title">$105.00</h5>
+          <p class="card-text"></p>
           <button 
           class="btn btn-primary"
            name="btnAccion" 
@@ -144,6 +121,28 @@
   </div>
   </div>
   </div>
+  <div class="col-3">
+      <div class="card">
+        <img 
+        title="GOMITA"
+        alt="Título"
+        class="card-img-top" 
+        src="img/9.png">
 
+        <div class="card-body">
+        <span>Goma de pelo</span> 
+        <h5 class="card-title">c/u$50.00</h5>
+          <p class="card-text">Goma  disponible en Lila y Amarilo</p>
+          <button 
+          class="btn btn-primary"
+           name="btnAccion" 
+           value="Agregar" 
+           type="submit">
+            Agregar al carrito
+              </button>
+      </div>
+      </div>
+      </div>
+ 
 </body>
 </html>
