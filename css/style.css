@@ -63,7 +63,7 @@ nav .logo a{
     width: 100%;
     height: 500px;
      top: 100px;
-    background-image: url(../img/fondo2.jpeg);
+    background-image: url(../img/fondo.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -76,8 +76,7 @@ nav .logo a{
     color: #000;
 }
 .container-area{
-    width: 200%;
-    position: relative;    
+    width: 200%;    
     background: #fff;
     height: 1500px;
 }
