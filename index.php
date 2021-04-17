@@ -1,6 +1,15 @@
-<html>
-<head>
-    <title>Tienda JYKYLS</title>
+<?php
+include "global/config.php";
+include "global/conexion.php";
+include 'carrito.php'
+?>
+<!DOCTYPE html>
+<html lang="en">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+   <title>Tienda JYKYLS</title>
     
     <link rel="stylesheet"   href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,9 +28,9 @@
                     <ul>
                         <li><a href="index.php">Home</a></li>
                         <li><a href="2.php">Lo que todos compran</a></li>
-                        <li><a href="">Cosmeticos</a></li>
-                        <li><a href="">Productos</a></li>
-                        <li><a href="">🛒</a></li> 
+                        <li><a href="3.php">Cosmeticos</a></li>
+                        <li><a href="4.php">Productos</a></li>
+                        <li><a href="5.php">Carrito(0)</a></li> 
                 </div>
                 </ul> 
                 </div>      
@@ -38,17 +47,26 @@
                 <div class="container">
     
                 <br/>
-                <div class="alert alert-success">    
+                <div class="alert alert-success">
+                <?php echo $mensaje; ?>    
                 <a class="badge badge-success" href="#">Ver mi compra</a>
                    </div>
                    
 
     <br/>
    	<div class="row">
-                    
+     <?php
+      $setencia=$pdo->prepare("SELECT * FROM `tblproductos`");
+      $sentencia->execute();
+      $listaProductos=$sentencia_fetAll(PDO::FETH_ASSOC);
+      print_($listaProductos); 
+    ?>
+
+
        <div class="col-3">
       <div class="card">
         <img 
+
         title="Vestido"
         alt="Título"
         class="card-img-top" 
@@ -57,14 +75,26 @@
         <div class="card-body">
         <span>Vestido</span> 
         <h5 class="card-title">$350.00</h5>
-          <p class="card-text">Amarillo, Azul, Rosa Size(M-6,G-8, EG-10)</p>
-          <button 
+          <p class="card-text">Amarillo, Azul, Rosa 
+          </p>
+         
+         <form action="" method="post">
+
+         <input type="text" name="id" id="id" value="1">
+         <input type="text" name="nombre" id="nombre" value="Vestido">
+         <input type="text" name="precio" id="precio" value="$350.00">
+         <input type="text" name="cantidad" id="cantidad" value="1">
+
+         <button 
           class="btn btn-primary"
            name="btnAccion" 
            value="Agregar" 
            type="submit">
             Agregar al carrito
               </button>
+         </form>
+         
+          
                 </div>
    </div>
       </div>
@@ -95,15 +125,15 @@
       <div class="col-3">
       <div class="card">
         <img 
-        title="Lentes de lujo"
+        title="CINTILLO"
         alt="Título"
         class="card-img-top" 
-        src="img/2.png">
+        src="img/6.JPG">
 
         <div class="card-body">
-        <span>Lentes de Lujo</span> 
-        <h5 class="card-title">$125.00</h5>
-          <p class="card-text">Rosa, Azul, Gris, Negro, Amarillo, Verde, Naranja, violeta </p>
+        <span>Cintillo decorado</span> 
+        <h5 class="card-title">$185.00</h5>
+          <p class="card-text">Azul, Amarillo, Negro, Rosa pastel</p>
           <button 
           class="btn btn-primary"
            name="btnAccion" 
@@ -111,10 +141,31 @@
            type="submit">
             Agregar al carrito
               </button>
-    </div>
-    </div>
-    </div>
-         
-      
+     </div>
+      </div>
+      </div>    
+
+      <div class="col-3">
+      <div class="card">
+        <img 
+        title="LENTES"
+        alt="Título"
+        class="card-img-top" 
+        src="img/2.PNG">
+
+        <div class="card-body">
+        <span>Lentillas de lujo</span> 
+        <h5 class="card-title">$125.00</h5>
+          <p class="card-text">Disponible en Negro, Gris, Rosa, Naranja, Verde, Violeta, Azul</p>
+          <button 
+          class="btn btn-primary"
+           name="btnAccion" 
+           value="Agregar" 
+           type="submit">
+            Agregar al carrito
+              </button>
+      </div>
+      </div>
+      </div>
 </body>
 </html>
