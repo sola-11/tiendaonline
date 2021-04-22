@@ -56,15 +56,15 @@
             <div class="col-3">
       <div class="card">
         <img 
-        title="CEPILLO"
+        title="CLIPS"
         alt="Título"
         class="card-img-top" 
-        src="img/5.jpg">
+        src="img/15.jpg">
 
         <div class="card-body">
-        <span>Cepillo para Babyhair</span> 
-        <h5 class="card-title">$100.00</h5>
-          <p class="card-text">Cepillo con peine para babyhair</p>
+        <span>Sugetador de pelo</span> 
+        <h5 class="card-title">$75.00</h5>
+          <p class="card-text">Clips de pelo, Tejido con figuras</p>
           <button 
           class="btn btn-primary"
            name="btnAccion" 
@@ -78,61 +78,15 @@
         <div class="col-3">
       <div class="card">
         <img 
-        title="MOCO"
+        title="KIT"
         alt="Título"
         class="card-img-top" 
-        src="img/4.jpg">
+        src="img/14.webp">
 
         <div class="card-body">
-        <span>Moco de Gorila</span> 
-        <h5 class="card-title">$350.00</h5>
-          <p class="card-text">Gel de pelo, activable con el agua</p>
-          <button 
-          class="btn btn-primary"
-           name="btnAccion" 
-           value="Agregar" 
-           type="submit">
-            Agregar al carrito
-              </button>
-      </div>
-      </div>
-      </div>
-      
-      
-      <div class="col-3">
-      <div class="card">
-        <img 
-        title="CINTILLO"
-        alt="Título"
-        class="card-img-top" 
-        src="img/7.WEBP">
-
-        <div class="card-body">
-        <span>Cintillo de perlas</span> 
-        <h5 class="card-title">$105.00</h5>
-          <p class="card-text"></p>
-          <button 
-          class="btn btn-primary"
-           name="btnAccion" 
-           value="Agregar" 
-           type="submit">
-            Agregar al carrito
-              </button>
-  </div>
-  </div>
-  </div>
-  <div class="col-3">
-      <div class="card">
-        <img 
-        title="GOMITA"
-        alt="Título"
-        class="card-img-top" 
-        src="img/9.png">
-
-        <div class="card-body">
-        <span>Goma de pelo</span> 
-        <h5 class="card-title">c/u$50.00</h5>
-          <p class="card-text">Goma  disponible en Lila y Amarilo</p>
+        <span>Kit de peinado</span> 
+        <h5 class="card-title">$500.00</h5>
+          <p class="card-text">Sugetadores, Gomas con pompones y más</p>
           <button 
           class="btn btn-primary"
            name="btnAccion" 
@@ -146,17 +100,15 @@
       <div class="col-3">
       <div class="card">
         <img 
-        title="LENTES"
+        title="MAQUINA"
         alt="Título"
         class="card-img-top" 
-        src="img/2.PNG">
+        src="img/25.JPG">
 
         <div class="card-body">
-        <span>Lentillas de lujo</span> 
-        <h5 class="card-title">$125.00</h5>
-          <p class="card-text">Disponible en Negro, Gris, Rosa, Naranja, Verde, Violeta, Azul</p>
-
-
+        <span>Mini freidora</span> 
+        <h5 class="card-title">$2500.00</h5>
+          <p class="card-text">Maquina freidora portable con dos freidoras </p>
           <button 
           class="btn btn-primary"
            name="btnAccion" 
@@ -164,9 +116,32 @@
            type="submit">
             Agregar al carrito
               </button>
+     </div>
       </div>
       </div>
-      </div>
+      
+      <div class="col-3">
+      <div class="card">
+        <img 
+        title="CASA DE ACAMPAR"
+        alt="Título"
+        class="card-img-top" 
+        src="img/27.jpg">
+
+        <div class="card-body">
+        <span>Casa de acampar</span> 
+        <h5 class="card-title">$1000.00</h5>
+          <p class="card-text">Azul, Negro, Blanca, Roja, impermeable</p>
+          <button 
+          class="btn btn-primary"
+           name="btnAccion" 
+           value="Agregar" 
+           type="submit">
+            Agregar al carrito
+              </button>
+  </div>
+  </div>
+  </div>
  
 </body>
 </html>

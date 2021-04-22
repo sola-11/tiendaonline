@@ -25,7 +25,9 @@
                         <li><a href="2.php">Lo que todos compran</a></li>
                         <li><a href="3.php">Cosmeticos</a></li>
                         <li><a href="4.php">Productos</a></li>
-                        <li><a href="mostrarcarrito.php">Carrito(0)</a></li> 
+                        <li><a href="mostrarcarrito.php">Carrito(<?php 
+                        echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']); 
+                        ?>)</a></li> 
                 </div>
                 </ul> 
                 </div>      

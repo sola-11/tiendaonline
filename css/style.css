@@ -79,4 +79,6 @@ nav .logo a{
     width: 200%;    
     background: #fff;
     height: 1500px;
+    position: relative;
+    
 }
