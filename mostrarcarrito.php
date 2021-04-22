@@ -5,7 +5,8 @@ include 'templates/cabecera.php';
 ?>
 
 <br>
-<h3>Mi compra</h3>
+<h4>Mi compra</h4>
+<?php if(!empty ($_SESSION['CARRITO'])) { ?>
 
 <table class="table table-light table-bordered">
     <tbody>
@@ -16,29 +17,30 @@ include 'templates/cabecera.php';
             <th width="20%" class="text-center">Total</th>
             <th width="5%">--</th>
         </tr>
-        <tr>
-            <td width="40%">VESTIDO</td>
-            <td width="150%" class="text-center">1</td>
-            <td width="20%" class="text-center">$350</td>
-            <td width="20%" class="text-center">$300</td>
-            <td width="5%"> <button class="btn btn-danger" type="button">Eliminar</button> </td>
-        </tr>
-        <tr>
-            <td width="40%">VESTIDO</td>
-            <td width="150%" class="text-center">1</td>
-            <td width="20%" class="text-center">$350</td>
-            <td width="20%" class="text-center">$300</td>
-            <td width="5%"> <button class="btn btn-danger" type="button">Eliminar</button> </td>
-        </tr>
+        <?php $total=0; ?>
+   <?php foreach($_SESSION['CARRITO'] as $indice=>$producto){ ?>
 
         <tr>
+            <td width="40%"><?php echo $producto['NOMBRE'] ?></td>
+            <td width="150%" class="text-center"><?php echo $producto['CANTIDAD'] ?></td>
+            <td width="20%" class="text-center">$<?php echo $producto['PRECIO'] ?></td>
+            <td width="20%" class="text-center">$<?php echo number_format( $producto['PRECIO']*$producto['CANTIDAD'],2); ?></td>
+            <td width="5%"> <button class="btn btn-danger" type="button">Eliminar</button> </td>
+        </tr>
+        <?php $total=$total+($producto['PRECIO']*$producto['CANTIDAD']); ?>
+        <?php  } ?>
+       
+       
+        <tr>
             <td colspan="3" alig="right"><h3>Total</h3></td>
-            <td alig="right"><h3>$<?php echo number_format(300, 2); ?></h3></td>
+            <td alig="right"><h3>$<?php echo number_format($total, 2); ?></h3></td>
             <td></td>
         </tr>
     </tbody>
 </table>
-
-<?php
-include 'templates/pie.php';
-?>
+<?php }else {?>
+<div class="alert alert-danger " >
+No hay productos en tu lista de compra...
+</div>
+<?php } ?>
+<?php include 'templates/pie.php'; ?>
