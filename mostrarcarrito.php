@@ -8,6 +8,7 @@ include 'templates/cabecera.php';
 <h4>Mi compra</h4>
 <?php if(!empty ($_SESSION['CARRITO'])) { ?>
 
+
 <table class="table table-light table-bordered">
     <tbody>
         <tr>
@@ -25,7 +26,22 @@ include 'templates/cabecera.php';
             <td width="150%" class="text-center"><?php echo $producto['CANTIDAD'] ?></td>
             <td width="20%" class="text-center">$<?php echo $producto['PRECIO'] ?></td>
             <td width="20%" class="text-center">$<?php echo number_format( $producto['PRECIO']*$producto['CANTIDAD'],2); ?></td>
-            <td width="5%"> <button class="btn btn-danger" type="button">Eliminar</button> </td>
+            <td width="5%">
+            
+            <form action="" method="post">
+            <input type="hidden"
+             name="id"
+             value="<?php echo openssl_encrypt ($producto['ID'],COD,KEY); ?>">
+
+           <button 
+           class="btn btn-danger"
+           type="submit"
+           name="btnAccion"
+           value="Eliminar" 
+            >Eliminar</button>
+            
+           </form>
+            </td>
         </tr>
         <?php $total=$total+($producto['PRECIO']*$producto['CANTIDAD']); ?>
         <?php  } ?>
