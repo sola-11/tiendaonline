@@ -55,18 +55,22 @@ include 'templates/cabecera.php';
         <tr>
         <td colspan="5">
 <form action="pagar.php" method="post">
-<div class="alert alert-success">
+<div class="alert alert-primary">
 <div class="form-group">
-        <label for="my-input">Correo de contacto</label>
-        <input type="email" name="email"
+        <label for="my-input">Correo electronico:</label>
+        <input id="email" name="email"
         class="form-control"
         type="email"
-        placeholder="Por favor escribe tu contraseña">
+        placeholder="Inserta tu correo"
+        required>
         
         </div>
+
 <small id="emailHelp"
 class="form-text text-muted">
-Los productos serán enviados este correo</small>
+Los productos serán enviados este correo
+</small>
+
 </div>
 <button class="btn btn-primary btn-lg btn-block" type="submit"
 name="btnAccion"
@@ -85,7 +89,7 @@ Proceder a pagar >>
     </tbody>
 </table>
 <?php }else {?>
-<div class="alert alert-danger " >
+<div class="alert alert-success " >
 No hay productos en tu compra
 </div>
 <?php } ?>
