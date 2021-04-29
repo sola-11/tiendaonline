@@ -37,6 +37,16 @@
                 </div>      
                 </nav>
                 <div class="banner-area">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
                   <h2>Especial en Home y desuentos toda la semana</h2>
                 </div>
                                 
