@@ -12,7 +12,7 @@ include 'templates/cabecera.php';
 <table class="table table-light table-bordered">
     <tbody>
         <tr>
-            <th width="40%">Description</th>
+            <th width="40%">Producto</th>
             <th width="150%" class="text-center">Cantidad</th>
             <th width="20%" class="text-center">Precio</th>
             <th width="20%" class="text-center">Total</th>
@@ -52,11 +52,41 @@ include 'templates/cabecera.php';
             <td alig="right"><h3>$<?php echo number_format($total, 2); ?></h3></td>
             <td></td>
         </tr>
+        <tr>
+        <td colspan="5">
+<form action="pagar.php" method="post">
+<div class="alert alert-success">
+<div class="form-group">
+        <label for="my-input">Correo de contacto</label>
+        <input type="email" name="email"
+        class="form-control"
+        type="email"
+        placeholder="Por favor escribe tu contraseña">
+        
+        </div>
+<small id="emailHelp"
+class="form-text text-muted">
+Los productos serán enviados este correo</small>
+</div>
+<button class="btn btn-primary btn-lg btn-block" type="submit"
+name="btnAccion"
+value="proceder">
+Proceder a pagar >>
+</button>
+</form>
+
+    
+        </td>
+        </tr>
+
+
+
+
     </tbody>
 </table>
 <?php }else {?>
 <div class="alert alert-danger " >
-No hay productos en tu lista de compra...
+No hay productos en tu compra
 </div>
 <?php } ?>
 <?php include 'templates/pie.php'; ?>
