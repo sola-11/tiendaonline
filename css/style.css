@@ -7,7 +7,7 @@ body {
   }
 
 nav {
-  background-color: rgb(60, 60, 168);
+  background-color: rgb(15, 15, 83);
   width: 100%;
   height: 5rem;
   position: fixed;
@@ -25,41 +25,53 @@ nav h3{
     padding: 1rem 2rem;
     float: left;
     align-self: center;
+    color: rgb(221, 218, 233);
 }
 nav ul li a {
     display: block;
     padding: 0 2rem;
     line-height: 5rem;
-    color: black;
+    color: rgb(207, 203, 224);
     text-decoration: none;
 }
 
 nav ul li ul{
     display: none;
     position: absolute;
-    background-color: rgb(66, 66, 146);
-    border: 1px solid rgb(110, 108, 148);
+    background-color: rgb(33, 33, 126);
+    border: 1px solid rgb(82, 79, 141);
 }
 
 nav ul li:hover ul {
     display: block;
+}
+nav ul li ul li {
+    width: 100%;
 }
 nav ul li ul li a{
     padding: 1rem;
     line-height: unset;
     white-space: nowrap;
 }
-
+ 
 .banner-area{
     width: 100%;
-    height: 500px;
+    height: 400px;
     top: 100px;
     background-image: url(../img/fondo2.jpg);
     -webkit-background-size: cover;
     background-size: cover;
 }
-.banner-area h2 {
+.banner-area h1 {
     text-decoration: none;
     color: whitesmoke;
-}
+    text-align: center;
+    text-shadow: rgb(89, 86, 105);
+      }
+ h1 {
+      -webkit-text-fill-color: rgb(255, 255, 255);
+      -webkit-text-stroke: 1px black;
+      text-shadow: -2px -2px 1px #000, 2px 2px 1px #000,
+       -2px 2px 1px #000, 2px -2px 1px #000;
+            }
 
