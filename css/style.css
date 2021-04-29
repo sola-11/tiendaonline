@@ -9,7 +9,8 @@ body {
 nav {
   background-color: rgb(41, 41, 114);
   width: 100%;
-  height: 5ren;
+  height: 5rem;
+  position: fixed;
 }
 nav ul {
     float: flex;
