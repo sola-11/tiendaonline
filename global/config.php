@@ -1,5 +1,5 @@
 <?php
-define("KEY", "develoteca");
+define("KEY", "Tiendaonline");
 define("COD", "AES-128-ECB");
 
 
