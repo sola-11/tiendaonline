@@ -68,13 +68,14 @@ include 'templates/cabecera.php';
 
 <small id="emailHelp"
 class="form-text text-muted">
-Los productos serán enviados este correo
+Los productos serán enviados este correo.
 </small>
 
 </div>
 <button class="btn btn-primary btn-lg btn-block" type="submit"
 name="btnAccion"
 value="proceder">
+<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
 Proceder a pagar >>
 </button>
 </form>

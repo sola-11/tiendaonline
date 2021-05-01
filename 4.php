@@ -14,7 +14,7 @@ include 'templates/cabecera.php';
                    <?php  }?>
 
     <br/>
-   	<div class="row">
+   	<div class="row"> 
      <?php
       $sentencia=$pdo->prepare("SELECT * FROM ``");
       $sentencia->execute();
