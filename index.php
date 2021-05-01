@@ -18,8 +18,9 @@ include 'templates/cabecera.php';
       $sentencia->execute();
       $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
       //print_r($listaProductos);   
-    ?>
+    ?> 
     <?php foreach($listaProductos as $producto){ ?>
+  
 
     
       <div class="col-3">
