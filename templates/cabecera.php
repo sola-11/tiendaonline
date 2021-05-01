@@ -16,7 +16,13 @@
            </div>   
                                                     
                     <ul>
-                        <li><a href="index.php">Home</a></li>
+                        <li><a href="index.php">Home</a>
+                        <ul>
+                        <li><a href="9.php">Mujer</a></li>
+                     <li><a href="10.php">Hombre</a></li>
+                     </ul>
+                        </li>
+                       
                         <li><a href="2.php">Lo que todos compran</a></li>
                         <li><a href="3.php">Cosmeticos</a></li>
                         <li><a href="">Productos</a>
@@ -29,7 +35,7 @@
                      </ul>
                       </li>                       
 
-                        <li><a href="mostrarcarrito.php">Carrito(<?php 
+                        <li><a href="mostrarcarrito.php"> Carrito(<?php 
                         echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']); 
                         ?>)</a></li> 
                 </div>
@@ -47,7 +53,20 @@
                   <br>
                   <br>
                   <br>
-                  <h2>Especial en Home y desuentos toda la semana</h2>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>            
+                 
+                  <h2>Especial en Home y descuentos toda la semana</h2>
                 </div>
                                 
           
