@@ -6,10 +6,10 @@ include 'templates/cabecera.php';
 ?>
  <br/>
  <?php if($mensaje!=""){?>
-                <div class="alert alert-success">
+                <div class="alert alert-primary">
                 <?php echo $mensaje; ?> 
 
-                <a href="mostrarcarrito.php" class="badge badge-success">Ver mi lista de compra</a>
+                <a href="mostrarcarrito.php" class="badge badge-pill badge-secondary">Ver mi compra</a>
                    </div>
                    <?php  }?>
 
@@ -27,7 +27,8 @@ include 'templates/cabecera.php';
       <div class="col-3">
       <div class="card">
         <img 
-
+        
+        alt="Card image cap"
         title="<?php echo $producto['Nombre'];?>"
         alt="<?php echo $producto['Nombre'];?>"
         class="card-img-top" 
@@ -38,8 +39,7 @@ include 'templates/cabecera.php';
         heigth="317px"
 
          >
-
-
+      
         <div class="card-body">
         <span><?php echo $producto['Nombre'];?></span> 
         <h5 class="card-title">$<?php echo $producto['Precio'];?></h5>
@@ -54,7 +54,7 @@ include 'templates/cabecera.php';
          <input type="hidden" name="cantidad" id="cantidad" value="<?php echo openssl_encrypt (1,COD,KEY);?>">
 
          <button 
-          class="btn btn-success"
+          class="btn btn-primary"
            name="btnAccion" 
            value="Agregar" 
            type="submit">
