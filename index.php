@@ -5,16 +5,19 @@ include 'carrito.php';
 include 'templates/cabecera.php';
 ?>
  <br/>
-                <div class="alert alert-success">
-                <?php echo $mensaje; ?>    
-                <a class="badge badge-success" href="">Ver mi compra</a>
+ <?php if($mensaje!=""){?>
+                <div class="alert alert-primary">
+                <?php echo $mensaje; ?> 
+
+                <a href="mostrarcarrito.php" class="badge badge-pill badge-secondary">Ver mi compra</a>
                    </div>
+                   <?php  }?>
                    
 
     <br/>
    	<div class="row">
      <?php
-      $sentencia=$pdo->prepare("SELECT * FROM `tblproductos`");
+      $sentencia=$pdo->prepare("SELECT * FROM `articulos`");
       $sentencia->execute();
       $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
       //print_r($listaProductos);   
