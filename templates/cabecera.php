@@ -9,10 +9,13 @@
     <link rel="stylesheet"   href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   </head> 	  
-	      <body>          
+	      <body>  
+                 
         <nav>  
-           <div class="logo">
-             <a href="index.php"><h3>Onfash</h3></a>
+        
+     
+      <a href="index.php"><h3>Onfash</h3></a>
+  
            </div>   
                                                     
                     <ul>
@@ -34,15 +37,19 @@
                      <li><a href="8.php">Viaje</a></li>
                      </ul>
                       </li>                       
-
-                        <li><a href="mostrarcarrito.php"> Carrito(<?php 
+                              <li><a href="mostrarcarrito.php"> 
+                        <button type="button" class="btn btn-outline-dark">
+                        Carrito<span class="badge bg-success"><?php 
                         echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']); 
-                        ?>)</a></li> 
-                </div>
+                        ?></span>
+                        </button></a></li>
+                          </div>
                 </ul> 
                 </div>      
                 </nav>
                 <div class="banner-area">
+                                
+              
                   <br>
                   <br>
                   <br>
@@ -66,12 +73,12 @@
                   <br>
                   <br>            
                  
-                  <h2>Especial en Home y descuentos toda la semana</h2>
-                </div>
-                                
+                  <h4>Especial en Home y descuentos toda la semana</h4>
+                              
+                         
           
 
                <br/>
                
-
+  <div>
                 <div class="container">
