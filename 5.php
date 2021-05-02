@@ -11,6 +11,7 @@ include 'templates/cabecera.php';
 
                 <a href="mostrarcarrito.php" class="badge badge-warning">Ver mi lista de compra</a>
                    </div>
+               
                    <?php  }?>
 
     <br/>

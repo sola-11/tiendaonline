@@ -9,7 +9,8 @@ include 'templates/cabecera.php';
                 <?php echo $mensaje; ?>    
                 <a class="badge badge-success" href="">Ver mi compra</a>
                    </div>
-                   
+                 
+                    
 
     <br/>
    	<div class="row">

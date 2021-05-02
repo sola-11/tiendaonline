@@ -14,6 +14,7 @@ if(isset($_POST['btnAccion'])){
           $mensaje.="Ok ID correcto" .$ID ."</br>";
 
 
+         
        }else{
               $mensaje.="Upps... ID incorrecto" .$ID."</br>";
 
