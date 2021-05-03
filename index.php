@@ -6,6 +6,7 @@ include 'templates/cabecera.php';
 ?>
 
  <br/>
+
                 <div class="alert alert-success">
                 <?php echo $mensaje; ?>    
                 <a class="badge badge-success" href="">Ver mi compra</a>
