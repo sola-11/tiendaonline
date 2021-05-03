@@ -5,7 +5,7 @@ include 'templates/cabecera.php';
 ?>
 
 <br>
-<h4>Mi compra</h4>
+<h3>Mi compra</h3>
 <?php if(!empty ($_SESSION['CARRITO'])) { ?>
 
 
@@ -91,7 +91,7 @@ Proceder a pagar >>
 </table>
 <?php }else {?>
 <div class="alert alert-success " >
-No hay productos en tu compra
+Tu carrito de Onfash esta vacio.
 </div>
 <?php } ?>
 <?php include 'templates/pie.php'; ?>
