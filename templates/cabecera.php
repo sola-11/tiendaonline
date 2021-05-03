@@ -72,7 +72,6 @@
                   <br>
                   <br>
                   <br>            
-                 
                   <h4>Especial en Home y descuentos toda la semana</h4>
                               
                          
@@ -80,5 +79,5 @@
 
                <br/>
                
-  <div>
+  
                 <div class="container">
