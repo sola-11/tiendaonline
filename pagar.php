@@ -4,7 +4,7 @@ include "global/conexion.php";
 include 'carrito.php';
 include 'templates/cabecera.php';
 ?>
-
+<script src="https://www.paypal.com/sdk/js?client-id=test&currency=USD"></script>
 <?php 
 if($_POST){
 
@@ -39,32 +39,11 @@ if($_POST){
      $sentencia->execute();
 
 
-  echo "<h3>".$Total. "</h3>";
-   
     }
      }
 
 ?>
-
-<script src="https://www.paypalobjects.com/api/checkout.js"></script>
-<style>
-    
-    /* Media query for mobile viewport */
-    @media screen and (max-width: 400px) {
-        #paypal-button-container {
-            width: 100%;
-        }
-    }
-    
-    /* Media query for desktop viewport */
-    @media screen and (min-width: 400px) {
-        #paypal-button-container {
-            width: 250px;
-            display: inline-block;
-        }
-    }
-    
-</style>
+ 
 
 <div class="jumbotron text-center">
   <h1 class="display-4">Paso Final</h1>
@@ -79,53 +58,16 @@ if($_POST){
   </p>
 </div>
 
-  <script>
-    paypal.Button.render({
-        env: 'sandbox', // sandbox | production
-        style: {
-            label: 'checkout',  // checkout | credit | pay | buynow | generic
-            size:  'responsive', // small | medium | large | responsive
-            shape: 'pill',   // pill | rect
-            color: 'gold'   // gold | blue | silver | black
-        },
- 
-        // PayPal Client IDs - replace with your own
-        // Create a PayPal app: https://developer.paypal.com/developer/applications/create
- 
-        client: {
-            sandbox:    '',
-            production: ''
-        },
- 
-        // Wait for the PayPal button to be clicked
- 
-        payment: function(data, actions) {
-            return actions.payment.create({
-                payment: {
-                    transactions: [
-                        {
-                            amount: { total: '<?php echo $Total;?>', currency: 'MXN' }, 
-                            description:"Compra de productos a Develoteca:$0.01",
-                            custom:"Codigo"
-                        }
-                    ]
-                }
-            });
-        },
- 
-        // Wait for the payment to be authorized by the customer
- 
-        onAuthorize: function(data, actions) {
-            return actions.payment.execute().then(function() {
-                console.log(data);
-                window.location="verificador.php?paymentToken="+data.paymentToken+"&paymentID="+data.paymentID;
-            });
-        }
-    
-    }, '#paypal-button-container');
- 
-</script>
+  
+<script>
+        // Render the PayPal button into #paypal-button-container
+        paypal.Buttons({
+            style: {
+                layout: 'horizontal'
+            }
+        }).render('#paypal-button-container');
+    </script>
+
 
 <?php
-include 'templates/pie.php';
-?>
+include 'templates/pie.php';?>

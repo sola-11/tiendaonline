@@ -55,7 +55,7 @@ include 'templates/cabecera.php';
         <tr>
         <td colspan="5">
 <form action="pagar.php" method="post">
-<div class="alert alert-primary">
+<div class="alert alert-dark">
 <div class="form-group">
         <label for="my-input">Correo electronico:</label>
         <input id="email" name="email"
@@ -72,7 +72,7 @@ Los productos serán enviados este correo.
 </small>
 
 </div>
-<button class="btn btn-primary btn-lg btn-block" type="submit"
+<button class="btn btn-success btn-lg btn-block" type="submit"
 name="btnAccion"
 value="proceder">
 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
