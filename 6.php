@@ -5,8 +5,15 @@ include 'carrito.php';
 include 'templates/cabecera.php';
 ?>
  <br/>
+<<<<<<< HEAD
+ 
+ 
+                <?php if($mensaje!=""){?>
+                <div class="alert alert-success">
+=======
  <?php if($mensaje!=""){?>
                 <div class="alert alert-primary">
+>>>>>>> f2321eca1e6ff19be4296e42fb4d49bdb8922c12
                 <?php echo $mensaje; ?> 
 
                 <a href="mostrarcarrito.php" class="badge badge-pill badge-secondary">Ver mi compra</a>
