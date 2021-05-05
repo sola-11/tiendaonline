@@ -13,6 +13,7 @@ include 'templates/cabecera.php';
                    </div>
                    <?php  }?>
 
+
     <br/>
    	<div class="row"> 
      <?php
