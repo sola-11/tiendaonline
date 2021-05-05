@@ -5,14 +5,14 @@ include 'templates/cabecera.php';
 ?>
 
 <br>
-<h4>Mi compra</h4>
+<h3>Mi compra</h3>
 <?php if(!empty ($_SESSION['CARRITO'])) { ?>
 
 
 <table class="table table-light table-bordered">
     <tbody>
         <tr>
-            <th width="40%">Description</th>
+            <th width="40%">Producto</th>
             <th width="150%" class="text-center">Cantidad</th>
             <th width="20%" class="text-center">Precio</th>
             <th width="20%" class="text-center">Total</th>
@@ -52,11 +52,46 @@ include 'templates/cabecera.php';
             <td alig="right"><h3>$<?php echo number_format($total, 2); ?></h3></td>
             <td></td>
         </tr>
+        <tr>
+        <td colspan="5">
+<form action="pagar.php" method="post">
+<div class="alert alert-dark">
+<div class="form-group">
+        <label for="my-input">Correo electronico:</label>
+        <input id="email" name="email"
+        class="form-control"
+        type="email"
+        placeholder="Inserta tu correo"
+        required>
+        
+        </div>
+
+<small id="emailHelp"
+class="form-text text-muted">
+Los productos serán enviados este correo.
+</small>
+
+</div>
+<button class="btn btn-success btn-lg btn-block" type="submit"
+name="btnAccion"
+value="proceder">
+<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+Proceder a pagar >>
+</button>
+</form>
+
+    
+        </td>
+        </tr>
+
+
+
+
     </tbody>
 </table>
 <?php }else {?>
-<div class="alert alert-danger " >
-No hay productos en tu lista de compra...
+<div class="alert alert-success " >
+Tu carrito de Onfash esta vacio.
 </div>
 <?php } ?>
 <?php include 'templates/pie.php'; ?>

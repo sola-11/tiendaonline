@@ -2,14 +2,12 @@
     margin: 0;
     padding: 0;
 }
-body {
-        background-color: #fefefe;
-  }
 
 nav {
-  background-color: rgb(41, 41, 114);
+  background-color: rgb(54, 50, 54);
   width: 100%;
-  height: 5ren;
+  height: 5rem;
+  position: relative;
 }
 nav ul {
     float: flex;
@@ -24,41 +22,53 @@ nav h3{
     padding: 1rem 2rem;
     float: left;
     align-self: center;
+    color: rgb(221, 218, 233);
 }
 nav ul li a {
     display: block;
     padding: 0 2rem;
     line-height: 5rem;
-    color: black;
+    color: rgb(207, 203, 224);
     text-decoration: none;
 }
 
 nav ul li ul{
     display: none;
     position: absolute;
-    background-color: rgb(41, 41, 114);
-    border: 1px solid rgb(79, 69, 218);
+    background-color: rgb(54, 50, 54);
+    border: 1px solid rgb(53, 12, 53);
 }
 
 nav ul li:hover ul {
     display: block;
+}
+nav ul li ul li {
+    width: 100%;
 }
 nav ul li ul li a{
     padding: 1rem;
     line-height: unset;
     white-space: nowrap;
 }
-
+ 
 .banner-area{
     width: 100%;
     height: 500px;
     top: 100px;
-    background-image: url(../img/fondo1.jpg);
+    background-image: url(../img/gifff.gif);
     -webkit-background-size: cover;
     background-size: cover;
 }
-.banner-area h2 {
+.banner-area h4 {
     text-decoration: none;
     color: whitesmoke;
-}
+    text-align: center;
+    text-shadow: rgb(16, 16, 17);
+      }
+ h4 {
+      -webkit-text-fill-color: rgb(242, 242, 246);
+      -webkit-text-stroke: 1px rgb(88, 85, 85);
+      text-shadow: -2px -2px 1px rgb(87, 71, 71), 2px 2px 1px rgb(15, 15, 26),
+       -2px 2px 1px rgb(119, 117, 117), 2px -2px 1px rgb(95, 90, 90);
+            }
 

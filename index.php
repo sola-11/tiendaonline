@@ -6,13 +6,14 @@ include 'templates/cabecera.php';
 ?>
 
  <br/>
+ <?php if($mensaje!=""){?>
+                <div class="alert alert-primary">
+                <?php echo $mensaje; ?> 
 
-                <div class="alert alert-success">
-                <?php echo $mensaje; ?>    
-                <a class="badge badge-success" href="">Ver mi compra</a>
+                <a href="mostrarcarrito.php" class="badge badge-pill badge-secondary">Ver mi compra</a>
                    </div>
-
-
+                   <?php  }?>
+                   
 
     <br/>
    	<div class="row">
