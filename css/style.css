@@ -72,3 +72,19 @@ nav ul li ul li a{
        -2px 2px 1px rgb(119, 117, 117), 2px -2px 1px rgb(95, 90, 90);
             }
 
+/*****buscador***/
+.form_search{
+       display: flex;
+    float:right;
+    background:initial;
+    padding: 10px;
+    border-radius: 10px;
+}
+.form_search .btn_search{
+    background: #1faac8;
+    color: #ffff;
+    padding: 0 20px;
+    border:0;
+    cursor:pointer;
+    margin-left: 10px;
+}
