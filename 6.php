@@ -6,6 +6,7 @@ include 'templates/cabecera.php';
 ?>
  <br/>
  
+ 
                 <?php if($mensaje!=""){?>
                 <div class="alert alert-success">
                 <?php echo $mensaje; ?> 
