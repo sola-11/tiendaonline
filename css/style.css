@@ -51,13 +51,18 @@ nav ul li ul li a{
     white-space: nowrap;
 }
  
-.banner-area{
-    width: 100%;
-    height: 500px;
-    top: 100px;
-    background-image: url(../img/gifff.gif);
-    -webkit-background-size: cover;
-    background-size: cover;
+.carousel-inner{ 
+    width: 95%;
+    height: 520px;    
+}
+.img{
+    width: 30%;
+    height: 30px;    
+}
+.imgd{
+    width: 20%;
+    height: 20px;
+    position: right;    
 }
 .banner-area h4 {
     text-decoration: none;
@@ -81,7 +86,7 @@ nav ul li ul li a{
     border-radius: 10px;
 }
 .form_search .btn_search{
-    background: #1faac8;
+    background: #1b0847;
     color: #ffff;
     padding: 0 20px;
     border:0;
