@@ -19,7 +19,7 @@ include 'templates/cabecera.php';
     <br/>
    	<div class="row">
      <?php
-      $sentencia=$pdo->prepare("SELECT * FROM `articulos`");
+      $sentencia=$pdo->prepare("SELECT * FROM `productos`");
       $sentencia->execute();
       $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
       //print_r($listaProductos);   
