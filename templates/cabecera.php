@@ -25,9 +25,9 @@
                         <li><a href="index.php">Home</a>
                         <ul>
                         <li><a href="9.php">Mujer</a></li>
-                     <li><a href="10.php">Hombre</a></li>
+                        <li><a href="10.php">Hombre</a></li>
                      </ul>
-                        </li>
+                     </li>
                        
                         <li><a href="2.php">Lo que todos compran</a></li>
                         <li><a href="3.php">Cosmeticos</a></li>
@@ -46,40 +46,41 @@
                         echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']); 
                         ?></span>
                         </button></a></li>
-                          </div>
+                                   </div>
                 </ul> 
                 </div>      
                 </nav>
+                <script>
+   
                 <div class="banner-area">
-                                
-              
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br> 
-         
-                  <h4>Especial en Home y descuentos toda la semana</h4>
-                            
-                         
-          
+                <div class="carousel-inner">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+ 
+    <div class="carousel-item active">
+      <img src="img/gifff.gif" class="d-block w-100" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="img/46.gif" class="d-block w-100" alt="">
+    </div>
+      <div class="carousel-item">
+      <img src="img/descuento1.gif" class="d-block w-100" alt="">
+    </div>
+    <div class="carousel-item">
+      <img src="img/descuentoo.gif" class="d-block w-100" alt="">
+    </div>
+     </div>                                         
+                  
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>    
+<br><br>  
+<h4>Especial en Home y descuentos toda la semana</h4>   
 
                <br/>
                

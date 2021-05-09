@@ -6,6 +6,7 @@ include 'templates/cabecera.php';
 ?>
 
  <br/>
+ 
  <?php if($mensaje!=""){?>
                 <div class="alert alert-primary">
                 <?php echo $mensaje; ?> 
@@ -14,7 +15,7 @@ include 'templates/cabecera.php';
                    </div>
                    <?php  }?>
                    
-
+                   
     <br/>
    	<div class="row">
      <?php
@@ -25,22 +26,18 @@ include 'templates/cabecera.php';
     ?> 
     <?php foreach($listaProductos as $producto){ ?>
   
-
-    
       <div class="col-3">
       <div class="card">
-        <img 
-
+        
+        <img
         title="<?php echo $producto['Nombre'];?>"
         alt="<?php echo $producto['Nombre'];?>"
         class="card-img-top" 
         src="<?php echo $producto['Imagen'];?>"
-         data-toggle="popover"
-         data-trigger="hover"
-         data-content="<?php echo $producto['Descripción'];?>"
-        heigth="317px"
-
-         >
+        data-bs-toggle="popover"
+         data-bs-trigger="hover"
+         data-bs-content="<?php echo $producto['Descripción'];?>"
+        heigth="317px">
 
 
         <div class="card-body">
@@ -70,10 +67,11 @@ include 'templates/cabecera.php';
       <?php } ?>
       </div>
 
-<script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
+      <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+         return new bootstrap.Popover(popoverTriggerEl)
+      })
 </script>
 
 <?php

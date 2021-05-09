@@ -8,22 +8,27 @@ nav {
   width: 100%;
   height: 5rem;
   position: relative;
-}
+  }
+
 nav ul {
     float: flex;
     display: flex;
 }
+
 nav ul li {
     float: left;
     list-style: none;
     position: relative;
+    z-index: 99;
 }
+
 nav h3{
     padding: 1rem 2rem;
     float: left;
     align-self: center;
     color: rgb(221, 218, 233);
 }
+
 nav ul li a {
     display: block;
     padding: 0 2rem;
@@ -42,9 +47,11 @@ nav ul li ul{
 nav ul li:hover ul {
     display: block;
 }
+
 nav ul li ul li {
     width: 100%;
 }
+
 nav ul li ul li a{
     padding: 1rem;
     line-height: unset;
@@ -53,7 +60,8 @@ nav ul li ul li a{
  
 .carousel-inner{ 
     width: 95%;
-    height: 520px;    
+    height: 520px;
+    z-index: 99;
 }
 .img{
     width: 30%;
