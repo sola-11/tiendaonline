@@ -16,7 +16,7 @@ include 'templates/cabecera.php';
     <br/>
    	<div class="row">
      <?php
-      $sentencia=$pdo->prepare("SELECT * FROM `belleza`");
+      $sentencia=$pdo->prepare("SELECT * FROM `productosb`");
       $sentencia->execute();
       $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
       //print_r($listaProductos);   
