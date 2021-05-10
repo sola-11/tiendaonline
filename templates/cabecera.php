@@ -50,8 +50,7 @@
                 </ul> 
                 </div>      
                 </nav>
-                <script>
-   
+                
                 <div class="banner-area">
                 <div class="carousel-inner">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -80,7 +79,7 @@
   </button>
 </div>    
 <br><br>  
-<h4>Especial en Home y descuentos toda la semana</h4>   
+<h4>Especial en Home y en lo que todos compran y descuentos hasta de un 50% toda la semana</h4>   
 
                <br/>
                
