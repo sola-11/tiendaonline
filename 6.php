@@ -5,16 +5,10 @@ include 'carrito.php';
 include 'templates/cabecera.php';
 ?>
  <br/>
-<<<<<<< HEAD
- 
- 
-                <?php if($mensaje!=""){?>
-                <div class="alert alert-success">
-=======
+
  <?php if($mensaje!=""){?>
                 <div class="alert alert-primary">
->>>>>>> f2321eca1e6ff19be4296e42fb4d49bdb8922c12
-                <?php echo $mensaje; ?> 
+                                  <?php echo $mensaje; ?> 
 
                 <a href="mostrarcarrito.php" class="badge badge-pill badge-secondary">Ver mi compra</a>
                    </div>
@@ -43,9 +37,7 @@ include 'templates/cabecera.php';
         data-bs-toggle="popover"
          data-bs-trigger="hover"
          data-bs-content="<?php echo $producto['Descripción'];?>"
-        heigth="317px"
-
-         >
+        heigth="317px">
       
         <div class="card-body">
         <span><?php echo $producto['Nombre'];?></span> 
@@ -80,7 +72,7 @@ include 'templates/cabecera.php';
       var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
       var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
          return new bootstrap.Popover(popoverTriggerEl)
-      })
+         })
 </script>
 
 <?php

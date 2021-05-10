@@ -12,11 +12,8 @@ include 'templates/cabecera.php';
                 <a href="mostrarcarrito.php" class="badge bg-secondary">Ver mi compra</a>
                    </div> 
                    <?php  }?>
-                   <form action="buscar_2.php" method="get" class="form_search">
-                             <input type="text" name="busqueda" id="busqueda" placeholder="Buscar">
-                             <input type="submit" value="Buscar" class="btn_search">
-                             </form>
-    <br/> <br/> <br/> 
+                  
+               
    	<div class="row">
      <?php
       $sentencia=$pdo->prepare("SELECT * FROM `tblproductos`");
