@@ -42,31 +42,29 @@ nav ul li ul{
     position: absolute;
     background-color: rgb(54, 50, 54);
     border: 1px solid rgb(53, 12, 53);
-    z-index: 500;
+   
 }
 
 nav ul li:hover ul {
     display: block;
-    z-index: 500;
-}
+    }
 
 nav ul li ul li {
     width: 100%;
-    z-index: 500;
 }
 
 nav ul li ul li a{
     padding: 1rem;
     line-height: unset;
     white-space: nowrap;
-    z-index: 500;
+    
 }
  
 .carousel-inner{ 
     width: 95%;
     height: 520px;
-    z-index: 99;
-}
+    top: 100%;
+    }
 .img{
     width: 30%;
     height: 30px;    
