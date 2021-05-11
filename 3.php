@@ -7,7 +7,7 @@ include 'templates/cabecera.php';
  <br/>
  <?php if($mensaje!=""){?>
                 <div class="alert alert-primary">
-                <?php echo $mensaje; ?> 
+<?php echo $mensaje; ?> 
 
                 <a href="mostrarcarrito.php" class="badge badge-pill badge-secondary">Ver mi compra</a>
                    </div>
