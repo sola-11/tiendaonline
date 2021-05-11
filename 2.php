@@ -10,10 +10,10 @@ include 'templates/cabecera.php';
                 <?php echo $mensaje; ?> 
 
                 <a href="mostrarcarrito.php" class="badge bg-secondary">Ver mi compra</a>
-                   </div>
+                   </div> 
                    <?php  }?>
-
-    <br/>
+                  
+               
    	<div class="row">
      <?php
       $sentencia=$pdo->prepare("SELECT * FROM `tblproductos`");
@@ -33,13 +33,11 @@ include 'templates/cabecera.php';
         alt="<?php echo $producto['Nombre'];?>"
         class="card-img-top" 
         src="<?php echo $producto['Imagen'];?>"
-         data-toggle="popover"
-         data-trigger="hover"
-         data-content="<?php echo $producto['Descripción'];?>"
-        heigth="317px"
+        data-bs-toggle="popover"
+         data-bs-trigger="hover"
+         data-bs-content="<?php echo $producto['Descripción'];?>"
+        heigth="317px"> 
 
-         >
-      
         <div class="card-body" style="heigth: 50%;">
         <span><?php echo $producto['Nombre'];?></span> 
         <h5 class="card-title">$<?php echo $producto['Precio'];?></h5>
@@ -67,12 +65,13 @@ include 'templates/cabecera.php';
       </div>
       
       <?php } ?>
-      </div>
+     
 
 <script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+         return new bootstrap.Popover(popoverTriggerEl)
+      })
 </script>
 
 <?php

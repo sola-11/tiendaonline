@@ -43,7 +43,11 @@ if($_POST){
      }
 
 ?>
+ <div class="img">
+ <img src="img/compra.gif" class="d-block w-100" alt="">
+ </div>
  
+ <br><br><br>
 
 <div class="jumbotron text-center">
   <h1 class="display-4">Paso Final</h1>
@@ -52,13 +56,12 @@ if($_POST){
   <h3>$<?php echo number_format($Total,2); ?> </h3>
     <div id="paypal-button-container" ></div>
     </p>
-
+  
   <p>Los productos podrán ser descargados una vez que se procese el pago <br/>
     <strong>(Para más información contactanos en Onfash2021@gmail.com)</strong>
   </p>
 </div>
 
-  
 <script>
         // Render the PayPal button into #paypal-button-container
         paypal.Buttons({
@@ -67,7 +70,7 @@ if($_POST){
             }
         }).render('#paypal-button-container');
     </script>
-
+ 
 
 <?php
 include 'templates/pie.php';?>

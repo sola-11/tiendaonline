@@ -5,6 +5,10 @@ include 'carrito.php';
 include 'templates/cabecera.php';
 ?>
  <br/>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 341758efad06992f81a336445d6d5c333d63408c
  <?php if($mensaje!=""){?>
                 <div class="alert alert-primary">
                                   <?php echo $mensaje; ?> 

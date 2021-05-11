@@ -17,7 +17,7 @@ include 'templates/cabecera.php';
     <br/>
    	<div class="row">
      <?php
-      $sentencia=$pdo->prepare("SELECT * FROM ``");
+      $sentencia=$pdo->prepare("SELECT * FROM `tblcocina`");
       $sentencia->execute();
       $listaProductos=$sentencia->fetchAll(PDO::FETCH_ASSOC);
       //print_r($listaProductos);   
@@ -34,9 +34,9 @@ include 'templates/cabecera.php';
         alt="<?php echo $producto['Nombre'];?>"
         class="card-img-top" 
         src="<?php echo $producto['Imagen'];?>"
-         data-toggle="popover"
-         data-trigger="hover"
-         data-content="<?php echo $producto['Descripción'];?>"
+        data-bs-toggle="popover"
+         data-bs-trigger="hover"
+         data-bs-content="<?php echo $producto['Descripción'];?>"
         heigth="317px"
 
          >
@@ -69,13 +69,12 @@ include 'templates/cabecera.php';
       
       <?php } ?>
       </div>
-
-<script>
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
+      <script>
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+         return new bootstrap.Popover(popoverTriggerEl)
+      })
 </script>
-
 <?php
 include 'templates/pie.php';
 ?>

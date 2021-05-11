@@ -8,22 +8,27 @@ nav {
   width: 100%;
   height: 5rem;
   position: relative;
-}
+  }
+
 nav ul {
     float: flex;
     display: flex;
 }
+
 nav ul li {
     float: left;
     list-style: none;
     position: relative;
+    z-index: 99;
 }
+
 nav h3{
     padding: 1rem 2rem;
     float: left;
     align-self: center;
     color: rgb(221, 218, 233);
 }
+
 nav ul li a {
     display: block;
     padding: 0 2rem;
@@ -37,27 +42,37 @@ nav ul li ul{
     position: absolute;
     background-color: rgb(54, 50, 54);
     border: 1px solid rgb(53, 12, 53);
+   
 }
 
 nav ul li:hover ul {
     display: block;
-}
+    }
+
 nav ul li ul li {
     width: 100%;
 }
+
 nav ul li ul li a{
     padding: 1rem;
     line-height: unset;
     white-space: nowrap;
+    
 }
  
-.banner-area{
-    width: 100%;
-    height: 500px;
-    top: 100px;
-    background-image: url(../img/gifff.gif);
-    -webkit-background-size: cover;
-    background-size: cover;
+.carousel-inner{ 
+    width: 95%;
+    height: 520px;
+    top: 100%;
+    }
+.img{
+    width: 30%;
+    height: 30px;    
+}
+.imgd{
+    width: 20%;
+    height: 20px;
+    position: right;    
 }
 .banner-area h4 {
     text-decoration: none;
@@ -81,7 +96,7 @@ nav ul li ul li a{
     border-radius: 10px;
 }
 .form_search .btn_search{
-    background: #1faac8;
+    background: #1b0847;
     color: #ffff;
     padding: 0 20px;
     border:0;

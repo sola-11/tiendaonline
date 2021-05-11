@@ -8,7 +8,7 @@ include 'templates/cabecera.php';
 <h3>Mi compra</h3>
 <?php if(!empty ($_SESSION['CARRITO'])) { ?>
 
-
+  
 <table class="table table-light table-bordered">
     <tbody>
         <tr>
@@ -84,11 +84,13 @@ Proceder a pagar >>
         </td>
         </tr>
 
-
-
-
     </tbody>
 </table>
+
+ <div class="foto">
+ <img src="img/24horasdedescu.gif" class="d-block w-100" alt="">
+ </div>
+
 <?php }else {?>
 <div class="alert alert-success " >
 Tu carrito de Onfash esta vacio.
