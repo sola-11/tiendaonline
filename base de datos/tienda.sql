@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-05-2021 a las 18:58:06
+-- Tiempo de generación: 11-05-2021 a las 05:25:50
 -- Versión del servidor: 10.1.36-MariaDB
 -- Versión de PHP: 7.0.32
 
@@ -21,6 +21,70 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `tienda`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tblcocina`
+--
+
+CREATE TABLE `tblcocina` (
+  `ID` int(11) NOT NULL,
+  `Nombre` varchar(255) NOT NULL,
+  `Precio` decimal(10,0) NOT NULL,
+  `Descripción` text NOT NULL,
+  `Imagen` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `tblcocina`
+--
+
+INSERT INTO `tblcocina` (`ID`, `Nombre`, `Precio`, `Descripción`, `Imagen`) VALUES
+(1, 'KIT de cucharones', '1000', 'Hechos en EE.UU, material plástico duro, hierro inoxidable.', 'img/49.jpg'),
+(2, 'Nevera moderna', '15000', 'Hecho en inglaterra, material de acero inoxisable.', 'img/70.jpg'),
+(3, 'Cucharón sacador y colador de acero', '325', 'Hecho en EE.UU, cucharon sacador, para colar los alimentos, sea agua o aceite lo que se cuele, hecho de acero inoxidable.', 'img/51.jpg'),
+(4, 'Cucharón S.C plástico', '215', 'Hecho en EE.UU, material plástico duro', 'img/52.jpg'),
+(5, 'Kit de cucharones', '250', 'Hecho en R.D, plastico medio.', 'img/53.jpg'),
+(6, 'KIT de cucharones para pasteleria', '295', 'Hecho en china, plástico duro y goma resistente', 'img/54.jpg'),
+(7, 'Olla eléctrica', '3500', 'Hecho en Italia, acero inoxidable, hierve y calienta automática', 'img/55.jpg'),
+(8, 'Sarten ', '1200', 'Hecho en EE.UU, material inoxidable, no pega alimentos y mantiende la temperatura, forma cuadrada', 'img/56.jpg'),
+(9, 'Kit de cocina ', '5125', 'Hecho en EE.UU, material resistente, inoxidable y duradero. Tiene: cucharones, ollas, sarten, tabla de material de olla.', 'img/57.jpg'),
+(10, 'Sarten y freidora en forma cuadrada, 3 temperaturas', '1000', 'Hecha en EE.UU, no pega alimentos ideal para cocinar carde y demás, acero inoxidable', 'img/71.jpg'),
+(11, 'Licuadora', '1500', 'Hecho en Rusia, cuchillas filosas inoxidables, baso alargado, uso automatico', 'img/59.jpg'),
+(12, 'Tabla de picar', '500', 'Hecho en EE.UU, 1005 caoba , inmune a la calcoma, madera resistente', 'img/60.jpg'),
+(13, 'Cucharones de cocina', '369', 'Kit hecho en china, cucharones especiales y personalizados, material resistente buena goma.', 'img/61.jpg'),
+(14, 'Maquina de hacer helado', '2999', 'Hecha en Canada, 4 velocidades', 'img/76.jpg'),
+(15, 'Freidora portatil', '5000', 'Hecho en Rusia', 'img/83.jpg'),
+(16, 'Estufa negra', '5900', 'Hecho en Europa, 4 urnillas, horno moderno ', 'img/64.jpg'),
+(17, 'Estufa doble', '8500', 'Hecho en EE.UU, estufa doble horno, 6 urnillas', 'img/65.jfif'),
+(18, 'Estufa electrica', '2500', 'Hecha en EE.UU, cargable, material resistente buena temperatura, 3 urnillas', 'img/66.jpg'),
+(19, 'Estufa', '6200', 'Hecho en Italia, 4 urnillas, horno definido con 3 temperaturas', 'img/67.jpeg'),
+(20, 'Licuadora', '2550', 'Hecho en Europa, 5 velocidades, cuchillas de hierro inoxidable', 'img/75.jpg'),
+(21, 'Estufa portatil de 4 urnas y 2 velocidades', '2600', 'Hecha en EE.UU,4 urnillas, 2 temperaturas. acero inoxidable', 'img/69.jpg'),
+(22, 'Sarten  de acero inoxidable', '520', 'Hecho en inglaterra, material de acero inoxisable.', 'img/50.jpg'),
+(23, 'KIT de ollas', '2000', 'Hecho en Italia, material inoxidable, no pega alimentos contiene ollas de diferentes tamaños', 'img/58.png'),
+(24, 'Estufa portatil, 2 urnas', '2100', 'Hecha en EE.UU, 2 urnillas, 2 temperaturas', 'img/68.jpg'),
+(25, 'Microondas moderno', '5600', 'Hecho en Italia, 7 temperaturas', 'img/72.jpeg'),
+(26, 'Microondas digital', '3000', 'Hecho en Canada, 9 temperaturas, pantalla táctil de indicación', 'img/73.jpg'),
+(27, 'Licuadora', '950', 'Hecho en Rusia, material inoxidable y cuchillas filosas y resistentes', 'img/74.jpg'),
+(28, 'KIT en madera\r\n', '900', 'Hecho en R.D, madera resistente, tamaños normales, para todos los usos , soporta calor', 'img/63.jpg'),
+(29, 'Licuadora rotable', '1500', 'Hecha en Europa, cuchillas filosas, taba rotable, puede voltear y usar y viceversas como 2 velocidades en un lado y 3 y digitales en el otro', 'img/77.jpg'),
+(30, 'Batidora', '2000', 'Hecha en Inglaterra, 5 velocidades', 'img/78.jpg'),
+(31, 'Batidora unitaria', '750', 'Hecha en Canada, 3 velocidades', 'img/79.jpg'),
+(32, 'Maquina de helado', '2500', 'Hecha en China, requiere hielo y un ambiente muy frio para funcionar bien', 'img/82.jpg'),
+(33, 'Maquina de helado', '2800', 'Hecho en R.D, madera resistente, tamaños normales, para todos los usos , soporta calor', 'img/81.jpg'),
+(34, 'Freidora sarten', '2500', 'Hecha en China, ideal para carne y demás, uso de parrila', 'img/71.jpg'),
+(35, 'Maquina de cocinar', '5900', 'Hecha en Italia, cocina, tuesta, fríe y mantiene 3 temperaturas, 1 media y 2calientes', 'img/84.jpg'),
+(36, 'Manga pastelera', '300', 'Hecha en Italia, salidas de figura y tambien hace bolitas', 'img/62.jpg'),
+(37, 'Maquina de waffles', '3050', 'Hecha en Rusia, 3 temperaturas', 'img/85.jpg'),
+(38, 'Maquina de helado', '1950', 'Hecha en china, requiere hielo y un ambiente frio para hacer los mejores helados', 'img/80.jpg'),
+(39, 'Kit ', '2900', 'Hecha en Italia, 2 temperaturas', 'img/87.jpg'),
+(40, 'Maquina de pancakes', '2900', 'Hecha en Italia, 2 temperaturas', 'img/86.png'),
+(41, 'Zafacon', '653', 'Hecho en Inglaterra, zafacón automático abre con el sensor del tacto humano', 'img/35.jpg'),
+(42, 'Freidora', '3500', 'Hecho en Italia, 4 temperaturas', 'img/88.jpg'),
+(43, 'Ganchos de cocina', '175', 'Hecho en Rusia, inoxisable', 'img/33.jpg'),
+(44, 'Tijeras de cocina', '163', 'Hecho en Colombia', 'img/34.webp');
 
 -- --------------------------------------------------------
 
@@ -151,7 +215,35 @@ INSERT INTO `tbldetalleventa` (`ID`, `IDVENTA`, `IDPRODUCTO`, `PRECIOUNITARIO`, 
 (107, 69, 11, '200.00', 1, 0),
 (108, 70, 11, '200.00', 1, 0),
 (109, 71, 11, '200.00', 1, 0),
-(110, 72, 11, '200.00', 1, 0);
+(110, 72, 11, '200.00', 1, 0),
+(111, 73, 7, '185.00', 1, 0),
+(112, 73, 21, '282.00', 1, 0),
+(113, 73, 14, '85.00', 1, 0),
+(114, 73, 12, '190.00', 1, 0),
+(115, 73, 9, '225.00', 1, 0),
+(116, 74, 6, '2500.00', 1, 0),
+(117, 74, 7, '185.00', 1, 0),
+(118, 74, 5, '250.00', 1, 0),
+(121, 75, 7, '4100.00', 1, 0),
+(122, 75, 10, '20000.00', 1, 0),
+(124, 75, 12, '15900.00', 1, 0),
+(125, 76, 7, '4100.00', 1, 0),
+(126, 76, 10, '20000.00', 1, 0),
+(128, 76, 12, '15900.00', 1, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tblhabitaciones`
+--
+
+CREATE TABLE `tblhabitaciones` (
+  `ID` int(11) NOT NULL,
+  `Nombre` varchar(255) NOT NULL,
+  `Precio` decimal(10,2) NOT NULL,
+  `Descripción` text NOT NULL,
+  `Imagen` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -191,7 +283,71 @@ INSERT INTO `tblproductos` (`ID`, `Nombre`, `Precio`, `Descripción`, `Imagen`) 
 (21, 'Sintillos de perlas', '282', 'Hecho en Rep. Dom., ideal para ocasiones de fiesta y elegantes, hecho de hierro y tela gruesa, y perlas originales.', 'img/7.webp'),
 (22, 'Coleros de colores', '125', 'Hecho en EE.UU, coleros de colores para días festivos, úsalos como desees. ATREVETE...', 'img/8.webp'),
 (23, 'Coleros mariposa', '135', 'Hecho en italia, coleros con figuras de mariposa, ideal para ocasiones festivas y puedes usarlo como guantero.', 'img/16.jpg'),
-(24, 'Pulseras coleros', '75', 'Hecho en EE.UU, pulseras con perlas que puedes usar como coleros, en colores elegantes, ideal para momentos elegante y divertidos.', 'img/47.jpeg');
+(24, 'Pulseras coleros', '75', 'Hecho en EE.UU, pulseras con perlas que puedes usar como coleros, en colores elegantes, ideal para momentos elegante y divertidos.', 'img/47.jpeg'),
+(25, 'Lentes oscuros', '269', 'Hechos en EE.UU', 'img/48.jpg'),
+(26, 'Lentes tigre', '296', 'Hecho en Dubai', 'img/30s.jpg'),
+(27, 'Mochila de acampar', '700', 'Hecho en R.D', 'img/43.jpg'),
+(28, 'Lentes rosa', '256', 'Hecho en inglaterra', 'img/32s.jpg'),
+(29, 'Tops angel negro con rosa neon', '520', 'Hecho en Austria', 'img/33s.jfif'),
+(30, 'Cámara instantánea', '595', 'Hecho en USA', 'img/39s.png'),
+(31, 'Lentes negros', '225', 'Hecho en R.D', 'img/31s.jpeg'),
+(32, 'Headphones', '1200', 'Hecho en Italia', 'img/35s.jpg'),
+(33, 'Top', '195', 'Hecho en China', 'img/34s.jpg'),
+(34, 'Headphones es especial 3 por el precio de 1', '1259', 'Hecho en Australia', 'img/36s.png'),
+(35, 'Lampara de galeria', '955', 'Hecho en Rusia', 'img/37.webp'),
+(36, 'Reloj estilo antiguo', '988', 'Hecho en USA', 'img/38.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tblsala`
+--
+
+CREATE TABLE `tblsala` (
+  `ID` int(11) NOT NULL,
+  `Nombre` varchar(255) NOT NULL,
+  `Precio` decimal(10,0) NOT NULL,
+  `Descripción` text NOT NULL,
+  `Imagen` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `tblsala`
+--
+
+INSERT INTO `tblsala` (`ID`, `Nombre`, `Precio`, `Descripción`, `Imagen`) VALUES
+(1, 'Cojines peludos', '295', 'Hecho en Argentina, 50% poliéster, 50% algodón', 'img/89.jpg'),
+(2, 'Cojines P. de corazón', '299', 'Hecho en Australia, 70% poliéster, 30% algodón', 'img/90.jpg'),
+(3, 'Mesa, con decoraciones', '1589', 'Hecho en R.D, madera de caoba ', 'img/96.jpg'),
+(4, 'Oficina, escritorio silla y decoraciones incluidas', '2956', 'Hecho en Rusia', 'img/98.jpg'),
+(5, 'Sofa de tela fina', '12566', 'Hecho en EE.UU', 'img/97.jpg'),
+(6, 'Mueble de sala', '12500', 'Hecho en Canada', 'img/94.jpg '),
+(7, 'Sofa con cojines de lagodon agregados', '4100', 'Hecho en Rusia', 'img/9s.jpg'),
+(8, 'Sofa ', '15900', 'Hecho en R.D (Decoraciones incluidas)', 'img/12s.jpg'),
+(9, 'Juego de Sofas', '12950', 'Hecho en USA, sin decoraciones', 'img/1s.jpg'),
+(10, 'Juego de comedor', '20000', 'Hecho en Colombia', 'img/2s.jpg'),
+(11, 'Juego de comedor\r\n', '16000', 'Hecho en Toronto, incluye decoraciones', 'img/4s.jpeg'),
+(12, 'juego de comedor', '15900', 'Hecho en Australia, en caoba', 'img/3s.jpg'),
+(13, 'Lampara electrica', '525', 'Hecho en Camcun', 'img/6s.jfif'),
+(14, 'Lampara de centro ', '5650', 'hecho en USA', 'img/7s.jpg'),
+(15, 'Lampara de centro', '2000', 'Hecho en Inglaterra', 'img/8s.jpg'),
+(16, 'Estante plástico', '1200', 'Hecho en USA', 'img/16s.jfif'),
+(17, 'Muebles LED', '5900', 'Hecho en Australia', 'img/17s.jpeg'),
+(18, 'Muebles con cojines de algodón incluidos', '12500', 'Hecho en Toronto', 'img/15s.jfif'),
+(19, 'Muebles LED', '9650', 'Hecho en R.D', 'img/18s.jpg'),
+(20, 'juego de Comedor', '20500', 'hecho en Bolivia, incluye decoraciones', 'img/11s.jpg'),
+(21, 'Sofa rojo intenso', '17999', 'Hecho en Italia', 'img/93.jpg'),
+(22, 'Juego de sofas', '25000', 'Hecho en Canada', 'img/91.jpg'),
+(23, 'Juego de mueble y mesita\r\n', '15950', 'hecho en Aruba', 'img/92.jpg'),
+(24, 'Juego de oficina con la decoración incluida', '8999', 'Hecho en USA, incluye mesa, silla y decoraciones', 'img/99.jpg'),
+(25, 'Despensa y closet ', '3200', 'Hecho en MIAMI', 'img/14s.jpg'),
+(26, 'Mimi armario de sala\r\n', '2000', 'Hecho en Colombia', 'img/13s.jpg'),
+(27, 'Bancos de cerramita y semento fuerte', '9250', 'Hecho en Aruba', 'img/19s.jpg'),
+(28, 'Muebles de plástico con cojinos balncos inluidos', '10000', 'Hecho en Australia', 'img/20s.jpg'),
+(29, 'Juego de muebles', '13999', 'Hecho en Colombia', 'img/21s.jpg'),
+(30, 'Mueble unitario ', '5999', 'Hecho en R.D', 'img/22s.jpg'),
+(31, 'Decoracion en madera', '5789', 'Hecho en Francia, madera caoba resistente ', 'img/40.jpg'),
+(32, 'Decoraciónde madera', '2800', 'Hecha en Australia', 'img/36.webp');
 
 -- --------------------------------------------------------
 
@@ -285,7 +441,11 @@ INSERT INTO `tblventas` (`ID`, `ClaveTransaccion`, `PaypalDatos`, `Fecha`, `Corr
 (69, 'duv3m3q0amc8l846s8i01r5lu3', '', '2021-05-05 23:39:30', 'solannybatista12@gmail.com', '200.00', 'pendiente'),
 (70, 'duv3m3q0amc8l846s8i01r5lu3', '', '2021-05-05 23:39:57', 'solannybatista12@gmail.com', '200.00', 'pendiente'),
 (71, 'duv3m3q0amc8l846s8i01r5lu3', '', '2021-05-05 23:41:22', 'solannybatista12@gmail.com', '200.00', 'pendiente'),
-(72, 'duv3m3q0amc8l846s8i01r5lu3', '', '2021-05-05 23:41:34', 'solannybatista12@gmail.com', '200.00', 'pendiente');
+(72, 'duv3m3q0amc8l846s8i01r5lu3', '', '2021-05-05 23:41:34', 'solannybatista12@gmail.com', '200.00', 'pendiente'),
+(73, 'lbknfurdeug94n879ivgt2hgf2', '', '2021-05-07 21:09:21', 'liligarcia12@gmail.com', '967.00', 'pendiente'),
+(74, '61jo9k5nocshfeu9fjkdmm86q5', '', '2021-05-10 12:58:40', 'solannybatista12@gmail.com125', '3475.00', 'pendiente'),
+(75, '61jo9k5nocshfeu9fjkdmm86q5', '', '2021-05-10 19:21:45', 'Batistasolanny026@gmail', '45999.00', 'pendiente'),
+(76, '61jo9k5nocshfeu9fjkdmm86q5', '', '2021-05-10 19:48:53', 'solannybatista12@gmail.com', '45999.00', 'pendiente');
 
 -- --------------------------------------------------------
 
@@ -315,6 +475,12 @@ INSERT INTO `tblviaje` (`ID`, `Nombre`, `Precio`, `Descripción`, `Imagen`) VALU
 --
 
 --
+-- Indices de la tabla `tblcocina`
+--
+ALTER TABLE `tblcocina`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Indices de la tabla `tbldetalleventa`
 --
 ALTER TABLE `tbldetalleventa`
@@ -323,9 +489,21 @@ ALTER TABLE `tbldetalleventa`
   ADD KEY `IDPRODUCTO` (`IDPRODUCTO`);
 
 --
+-- Indices de la tabla `tblhabitaciones`
+--
+ALTER TABLE `tblhabitaciones`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Indices de la tabla `tblproductos`
 --
 ALTER TABLE `tblproductos`
+  ADD PRIMARY KEY (`ID`);
+
+--
+-- Indices de la tabla `tblsala`
+--
+ALTER TABLE `tblsala`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -345,22 +523,40 @@ ALTER TABLE `tblviaje`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `tblcocina`
+--
+ALTER TABLE `tblcocina`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+
+--
 -- AUTO_INCREMENT de la tabla `tbldetalleventa`
 --
 ALTER TABLE `tbldetalleventa`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=129;
+
+--
+-- AUTO_INCREMENT de la tabla `tblhabitaciones`
+--
+ALTER TABLE `tblhabitaciones`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `tblproductos`
 --
 ALTER TABLE `tblproductos`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+
+--
+-- AUTO_INCREMENT de la tabla `tblsala`
+--
+ALTER TABLE `tblsala`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT de la tabla `tblventas`
 --
 ALTER TABLE `tblventas`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 
 --
 -- AUTO_INCREMENT de la tabla `tblviaje`
